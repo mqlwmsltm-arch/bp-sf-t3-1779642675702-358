@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마포 셔츠룸 정보 — 상세 안내 & 위치</title>
+    <meta name="description" content="마포 셔츠룸의 모든 정보를 한눈에. 주소, 운영시간, 메뉴, 주차, 그리고 이 동네 미친 공간에 대한 솔직한 이야기. 힙플레이스 정보는 여기서 끝.">
+    <meta name="keywords" content="마포 셔츠룸 정보, 마포 카페 위치, 셔츠룸 운영시간, 마포 핫플 주소, 브루탈리스트 카페 안내, 마포 놀거리, 카페 정보">
+    <link rel="canonical" href="https://sf-t3-1779642675702-358.pages.dev/info">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <!-- Open Graph -->
+    <meta property="og:title" content="마포 셔츠룸 정보 — 알고 싶은 건 다 까발린다">
+    <meta property="og:description" content="주소부터 내부 분위기까지, 마포 셔츠룸에 대한 모든 진실. 여기 오기 전에 이 페이지를 봐라.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+    <!-- JSON-LD LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CafeOrCoffeeShop",
+        "name": "마포 셔츠룸",
+        "description": "기성 카페에 염증을 느꼈다면? 원초적인 공간, 강렬한 커피, 자유로운 분위기의 힙플레이스 카페.",
+        "url": "https://sf-t3-1779642675702-358.pages.dev",
+        "telephone": "02-1234-5678",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+                "opens": "09:00",
+                "closes": "22:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "10:00",
+                "closes": "23:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "10:00",
+                "closes": "21:00"
+            }
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "마포구 와우산로 123",
+            "addressLocality": "서울특별시",
+            "addressRegion": "마포구",
+            "postalCode": "04077",
+            "addressCountry": "KR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 37.5523,
+            "longitude": 126.9256
+        },
+        "priceRange": "₩5,000-₩12,000",
+        "servesCuisine": "커피, 디저트, 브런치",
+        "image": "https://sf-t3-1779642675702-358.pages.dev/og-image.jpg"
+    }
+    </script>
+    <style>
+        /* =============================================================
+           BRUTALIST-AVANTGARDE DESIGN SYSTEM — 마포 셔츠룸
+           테마: kr-neon-void
+           변경 금지: 클래스명, 변수, 레이아웃 구조
+           ============================================================= */
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #111111;
+            --bg-card: #1a1a1a;
+            --text-primary: #f0f0f0;
+            --text-secondary: #a0a0a0;
+            --accent-neon: #ff0066;
+            --accent-neon2: #00ffcc;
+            --accent-brutal: #ff6600;
+            --border-brutal: #333333;
+            --border-thick: 4px;
+            --shadow-neon: 0 0 12px rgba(255, 0, 102, 0.4);
+            --shadow-brutal: 8px 8px 0px rgba(0, 0, 0, 0.8);
+            --font-header: 'Impact', 'Arial Black', sans-serif;
+            --font-body: 'Courier New', 'Courier', monospace;
+            --spacing-unit: 1.5rem;
+            --max-width: 1200px;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-image:
+                linear-gradient(45deg, rgba(255, 0, 102, 0.03) 25%, transparent 25%),
+                linear-gradient(-45deg, rgba(0, 255, 204, 0.03) 25%, transparent 25%);
+            background-size: 40px 40px;
+        }
+
+        /* ---- 네비게이션 ---- */
+        .nav-container {
+            background-color: var(--bg-secondary);
+            border-bottom: var(--border-thick) solid var(--border-brutal);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-brutal);
+        }
+
+        .nav-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem var(--spacing-unit);
+        }
+
+        .nav-logo {
+            font-family: var(--font-header);
+            font-size: 1.8rem;
+            color: var(--accent-neon);
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.1em;
+            text-shadow: 0 0 8px rgba(255, 0, 102, 0.6);
+            transition: transform 0.2s;
+        }
+
+        .nav-logo:hover {
+            transform: scale(1.05);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-family: var(--font-body);
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+            padding: 0.3rem 0.8rem;
+            border: 2px solid transparent;
+            transition: all 0.2s ease;
+            letter-spacing: 0.05em;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-neon);
+            border-color: var(--accent-neon);
+            background-color: rgba(255, 0, 102, 0.1);
+        }
+
+        .nav-links a.active {
+            color: var(--accent-neon);
+            border-color: var(--accent-neon);
+            background-color: rgba(255, 0, 102, 0.15);
+        }
+
+        /* 햄버거 메뉴 (hamburger-menu 패턴) */
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 8px;
+            z-index: 1001;
+        }
+
+        .hamburger-menu span {
+            display: block;
+            width: 30px;
+            height: 3px;
+            background-color: var(--text-primary);
+            margin: 4px 0;
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+
+        .hamburger-menu.open span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+
+        .hamburger-menu.open span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger-menu.open span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        /* ---- 히어로 영역 ---- */
+        .hero {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 4rem var(--spacing-unit) 3rem;
+            text-align: left;
+            border-bottom: var(--border-thick) solid var(--border-bratl);
+        }
+
+        .hero h1 {
+            font-family: var(--font-header);
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            text-transform: uppercase;
+            color: var(--text-primary);
+            line-height: 1.1;
+            margin-bottom: 1rem;
+        }
+
+        .hero h1 .highlight {
+            color: var(--accent-neon);
+            text-shadow: var(--shadow-neon);
+        }
+
+        .hero .subhead {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            line-height: 1.8;
+            border-left: 4px solid var(--accent-neon);
+            padding-left: 1.5rem;
+            background: rgba(255, 255, 255, 0.02);
+            padding: 1rem 1.5rem;
+        }
+
+        /* ---- 공통 섹션 ---- */
+        .section {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 3rem var(--spacing-unit);
+            border-bottom: 2px solid var(--border-brutal);
+        }
+
+        .section:last-of-type {
+            border-bottom: none;
+        }
+
+        .section-title {
+            font-family: var(--font-header);
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .section-title .accent-bar {
+            display: inline-block;
+            width: 6px;
+            height: 2rem;
+            background-color: var(--accent-neon);
+            box-shadow: var(--shadow-neon);
+        }
+
+        .section-content {
+            font-size: 1rem;
+            color: var(--text-primary);
+        }
+
+        .section-content p {
+            margin-bottom: 1.2rem;
+            max-width: 800px;
+        }
+
+        .section-content strong {
+            color: var(--accent-neon);
+        }
+
+        .section-content a {
+            color: var(--accent-neon2);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .section-content a:hover {
+            color: var(--accent-neon);
+        }
+
+        /* ---- 카드 그리드 (재사용) ---- */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 2px solid var(--border-bratl);
+            padding: 1.5rem;
+            box-shadow: var(--shadow-brutal);
+            transition: all 0.2s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-neon), var(--accent-neon2));
+            opacity: 0.5;
+        }
+
+        .card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.9), 0 0 20px rgba(255, 0, 102, 0.15);
+        }
+
+        .card h3 {
+            font-family: var(--font-header);
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            color: var(--accent-neon);
+            margin-bottom: 0.75rem;
+            letter-spacing: 0.05em;
+        }
+
+        .card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .card .card-label {
+            display: inline-block;
+            font-family: var(--font-body);
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: var(--accent-brutal);
+            text-transform: uppercase;
+            border: 1px solid var(--accent-brutal);
+            padding: 0.2rem 0.6rem;
+            margin-top: 0.8rem;
+            letter-spacing: 0.1em;
+        }
+
+        /* ---- 정보 전용 스타일 (주소, 연락처 등) ---- */
+        .info-block {
+            background-color: var(--bg-card);
+            border: 2px solid var(--border-bratl);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .info-block .info-title {
+            font-family: var(--font-header);
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            color: var(--accent-neon);
+            margin-bottom: 0.8rem;
+            letter-spacing: 0.08em;
+        }
+
+        .info-block .info-detail {
+            font-size: 1rem;
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        .info-block .info-detail span {
+            display: inline-block;
+            background-color: rgba(255, 0, 102, 0.1);
+            padding: 0.2rem 0.6rem;
+            margin: 0.2rem 0;
+            border-left: 3px solid var(--accent-neon);
+        }
+
+        .info-block .info-icon {
+            display: inline-block;
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
+
+        /* ---- 카드 리스트 (지역 시그널) ---- */
+        .local-signal-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .local-signal-list li {
+            background: var(--bg-card);
+            border: 1px solid #2a2a2a;
+            padding: 1rem 1.2rem;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            transition: border-color 0.2s;
+        }
+
+        .local-signal-list li::before {
+            content: '▸';
+            color: var(--accent-neon);
+            font-size: 1.2rem;
+        }
+
+        .local-signal-list li:hover {
+            border-color: var(--accent-neon);
+        }
+
+        /* ---- FAQ (아코디언 없이 단순 Q&A) ---- */
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+</body>
+</html>

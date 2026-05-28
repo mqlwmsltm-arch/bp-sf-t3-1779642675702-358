@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마포 셔츠룸 블로그 – 힙플레이스의 민낯</title>
+    <meta name="description" content="마포 셔츠룸의 진짜 이야기. 브루탈리즘 카페의 탄생 비화, 커피 맛의 반란, 그리고 기성 카페에 던지는 한 방. 읽고 나면 당신의 카페 기준이 바뀐다.">
+    <meta name="keywords" content="마포 셔츠룸 블로그, 마포 카페 이야기, 브루탈리스트 카페, 힙플레이스 카페, 마포 핫플, 카페 리뷰, 커피 맛집">
+    <link rel="canonical" href="https://sf-t3-1779642675702-358.pages.dev/blog/">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <!-- Open Graph -->
+    <meta property="og:title" content="마포 셔츠룸 블로그 – 카페라는 환상을 깨부수다">
+    <meta property="og:description" content="소셜미디어용 카페는 이제 그만. 마포 셔츠룸이 말하는 진짜 커피, 진짜 공간, 진짜 자유. 블로그에서 전부 까발린다.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sf-t3-1779642675702-358.pages.dev/blog/">
+    <meta property="og:image" content="https://sf-t3-1779642675702-358.pages.dev/assets/og-blog.jpg">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:site_name" content="마포 셔츠룸">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="마포 셔츠룸 블로그 – 카페라는 환상을 깨부수다">
+    <meta name="twitter:description" content="기성 카페에 염증 느꼈다면? 마포 셔츠룸의 진짜 이야기를 들어라. 커피 맛, 공간, 철학까지 전부 솔직하게.">
+    <meta name="twitter:image" content="https://sf-t3-1779642675702-358.pages.dev/assets/twitter-blog.jpg">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "마포 셔츠룸",
+        "description": "기성 카페의 틀을 깨는 힙플레이스. 브루탈리즘 인테리어, 강렬한 커피, 자유로운 분위기.",
+        "url": "https://sf-t3-1779642675702-358.pages.dev",
+        "telephone": "02-123-4567",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "마포구 와우산로 12길 34",
+            "addressLocality": "서울",
+            "addressRegion": "마포",
+            "postalCode": "04010",
+            "addressCountry": "KR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 37.5512,
+            "longitude": 126.9189
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+                "opens": "10:00",
+                "closes": "22:00"
+            }
+        ],
+        "sameAs": [
+            "https://www.instagram.com/mapo_shirtsroom",
+            "https://twitter.com/mapo_shirtsroom"
+        ],
+        "menu": "https://sf-t3-1779642675702-358.pages.dev/menu",
+        "mainEntityOfPage": {
+            "@type": "Blog",
+            "about": {
+                "@type": "Thing",
+                "name": "힙플레이스 카페 문화"
+            }
+        }
+    }
+    </script>
+    <style>
+        /* Brutalist Avant-Garde Design System – kr-neon-void theme */
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #111;
+            --bg-card: #1a1a1a;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+            --text-accent: #ff00ff;
+            --border-color: #2a2a2a;
+            --shadow-color: rgba(255,0,255,0.15);
+            --font-mono: 'Courier New', Courier, monospace;
+            --font-sans: 'Helvetica Neue', Arial, sans-serif;
+            --font-size-base: 16px;
+            --line-height-base: 1.6;
+            --spacing-unit: 24px;
+            --transition-speed: 0.2s;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-size: var(--font-size-base);
+            line-height: var(--line-height-base);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* Header & Navigation */
+        .header {
+            background-color: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 12px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .logo a {
+            font-family: var(--font-mono);
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--text-accent);
+            text-decoration: none;
+            letter-spacing: 2px;
+            transition: opacity var(--transition-speed);
+        }
+
+        .logo a:hover {
+            opacity: 0.8;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-list {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .nav-list a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            padding: 8px 12px;
+            border: 1px solid transparent;
+            transition: all var(--transition-speed);
+        }
+
+        .nav-list a:hover,
+        .nav-list a.active {
+            border-color: var(--text-accent);
+            color: var(--text-accent);
+            background-color: rgba(255,0,255,0.05);
+        }
+
+        /* Hamburger Menu */
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+            padding: 8px;
+            background: none;
+            border: none;
+        }
+
+        .hamburger-menu span {
+            display: block;
+            width: 28px;
+            height: 3px;
+            background-color: var(--text-primary);
+            transition: all 0.3s;
+        }
+
+        .hamburger-menu.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger-menu.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger-menu.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* Responsive 768 */
+        @media (max-width: 768px) {
+            .hamburger-menu {
+                display: flex;
+            }
+
+            .nav-list {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: var(--bg-secondary);
+                border-bottom: 1px solid var(--border-color);
+                padding: 12px 0;
+                gap: 0;
+            }
+
+            .nav-list.open {
+                display: flex;
+            }
+
+            .nav-list a {
+                display: block;
+                padding: 12px var(--spacing-unit);
+                border: none;
+                border-bottom: 1px solid var(--border-color);
+            }
+
+            .nav-list a:last-child {
+                border-bottom: none;
+            }
+
+            .nav-list a:hover {
+                background-color: rgba(255,0,255,0.08);
+            }
+        }
+
+        /* Main Content Area */
+        .main {
+            padding: 48px 0;
+        }
+
+        /* Blog Post */
+        .blog-post {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: var(--spacing-unit);
+            margin-bottom: var(--spacing-unit);
+            box-shadow: 4px 4px 0 var(--shadow-color);
+        }
+
+        .blog-post h1 {
+            font-family: var(--font-mono);
+            font-size: 2.2rem;
+            color: var(--text-accent);
+            margin-bottom: 12px;
+            letter-spacing: -1px;
+            line-height: 1.2;
+        }
+
+        .blog-post .meta {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 12px;
+        }
+
+        .blog-post .meta span {
+            margin-right: 16px;
+        }
+
+        .blog-post p {
+            margin-bottom: 1.2rem;
+            color: var(--text-primary);
+        }
+
+        .blog-post blockquote {
+            border-left: 4px solid var(--text-accent);
+            padding-left: 16px;
+            margin: 24px 0;
+            color: var(--text-secondary);
+            font-style: italic;
+            font-size: 1.05rem;
+        }
+
+        .blog-post .highlight {
+            color: var(--text-accent);
+            font-weight: bold;
+        }
+
+        .blog-post .cta-box {
+            background-color: rgba(255,0,255,0.08);
+            border: 1px dashed var(--text-accent);
+            padding: 20px;
+            margin: 24px 0;
+            text-align: center;
+        }
+
+        .blog-post .cta-box a {
+            color: var(--text-accent);
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .blog-post .cta-box a:hover {
+            color: #ff66ff;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            padding: 24px 0;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        /* Utility */
+        .text-accent {
+            color: var(--text-accent);
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="/">마포 셔츠룸</a>
+            </div>
+            <nav class="nav" aria-label="주 메뉴">
+                <button class="hamburger-menu" aria-label="메뉴 열기/닫기" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="/">홈</a></li>
+                    <li><a href="/about">소개</a></li>
+                    <li><a href="/menu">메뉴</a></li>
+                    <li><a href="/gallery">갤러리</a></li>
+                    <li><a href="/blog" class="active">블로그</a></li>
+                    <li><a href="/contact">연락처</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main" role="main">
+        <div class="container">
+            <article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting">
+                <h1 itemprop="headline">기성 카페에 염증 느꼈다면? 마포 셔츠룸이 답이다.</h1>
+                <div class="meta" itemprop="datePublished" content="2025-04-15">
+                    <span>📅 2025.04.15</span>
+                    <span>✍️ 마포 셔츠룸 에디터</span>
+                    <span>🏷️ 힙플레이스, 브루탈리즘, 커피 반란</span>
+                </div>
+
+                <p><span class="highlight">솔직히 말해라.</span> 인스타용 카페에서 찍은 사진, 진짜 맛있는 커피 마시느라 찍은 거냐? 아니면 그냥 '분위기'라는 이름의 가짜 감성에 속은 거냐? 우리 마포 셔츠룸은 그런 <strong>거짓말</strong>과 작별이다.</p>
+
+                <p>브루탈리즘. 들어봤겠지. 맨 콘크리트, 거친 질감, 불편한 듯 편안한. 여기 마포 셔츠룸은 그냥 '예뻐 보이려고' 만든 공간이 아니다. <strong>본질을 까발리는 공간</strong>이다. 커피는 써야 하고, 벽은 투박해야 하며, 사람들은 편하게 있어야 한다. 그게 전부다.</p>
+
+                <blockquote>
+                    "카페는 무슨 전시장이냐? 커피 마시러 온 거면 커피에 집중해라. 그리고 그 커피는 여기서만 맛볼 수 있는 강렬함이다."
+                </blockquote>
+
+                <p>우리는 <span class="highlight">스페셜티 원두</span>를 쓰지만, '고급짐'을 강요하지 않는다. 바리스타가 직접 블렌딩한 셔츠룸 시그니처는 입안에서 터지는 과일 산미와 다크 초콜릿의 쌉싸름함이 공존한다. 한 모금에 <em>아, 이게 진짜구나</em> 싶을 거다.</p>
+
+                <p>의자? 불편하면 그냥 바닥에 앉아라. 여긴 자유다. 노트북 펼치고 일해도 좋고, 친구랑 떠들어도 좋고, 그냥 멍하니 콘크리트 벽을 쳐다봐도 좋다. <strong>니 맘대로 해라.</strong> 단, 커피는 존중해라. 그게 우리 룰의 전부다.</p>
+
+                <div class="cta-box">
+                    <p>👊 <strong>지금 당장 와라.</strong> 여기서 진짜 커피를 마셔라. 후회는 없다. 맛
+</body>
+</html>
